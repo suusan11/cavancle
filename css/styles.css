@@ -2,11 +2,12 @@
   box-sizing: border-box;
 }
 body {
-  font-family: 'Catnip' 'Avenir','Helvetica Neue','Helvetica','Arial','Hiragino Sans','ヒラギノ角ゴシック',YuGothic,'Yu Gothic','メイリオ', Meiryo,'ＭＳ Ｐゴシック','MS PGothic', sans-serif;
+  font-family: 'Araial','Avenir','Helvetica Neue','Helvetica','小塚ゴシックPr6N','Hiragino Sans','ヒラギノ角ゴシック',YuGothic,'Yu Gothic','メイリオ', Meiryo,'ＭＳ Ｐゴシック','MS PGothic', sans-serif, serif;
   font-size: 100%;
-  color:
-  background-color:
+  color: #1a1a1a;
+  background-color: #ffffff;
 }
+/*----- container -----*/
 .container {
   max-width: 100%;
   width: 1140px;
@@ -14,6 +15,8 @@ body {
   padding-left: 15px;
   padding-right: 15px;
 }
+
+/*----- header -----*/
 .header-nav {
   display: flex;
   align-items: center;
@@ -30,5 +33,46 @@ body {
 .header-nav_links li a {
   text-decoration: none;
   color: #1a1a1a
+  font-family: 'Bradley Hand';
   font-weight: bold;
 }
+
+/*----- first section -----*/
+.title-container {
+  text-align: center;
+}
+.title-container h1 {
+  font-family: 'Bradley Hand';
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+.title-container p {
+  font-size: 20px;
+  margin-top: 0px;
+}
+.btn {
+  width: 250px;
+  height: 50px;
+  display: inline-block;
+  padding: 0.3em 1em;
+  text-decoration: none;
+  background-color: #ffffff;
+  color: #bb6237;
+  font-size: 20px;
+  text-align: center;
+  line-height: 30px;
+  border: solid 2px #bb6237;
+  border-radius: 5px;
+  transition: .4s;
+}
+.btn:hover {
+  background-color: #bb6237;
+  color: #ffffff;
+  cursor: pointer;
+}
+.top-img {
+  width: 1080px;
+  margin: 40px 20px;
+}
+
+
