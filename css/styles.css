@@ -20,45 +20,53 @@ body {
 .header-nav {
   display: flex;
   align-items: center;
-  justify-content: space-between;;
+  justify-content: space-between;
+  margin-top: 20px;
 }
 .header-nav_logo img {
-  width: 38px;
+  width: 50px;
   height: auto;
 }
 .header-nav_links li {
   display: inline-block;
   margin-left: 1em;
+
 }
 .header-nav_links li a {
   text-decoration: none;
-  color: #1a1a1a
+  color: #bb6237;
   font-family: 'Bradley Hand';
   font-weight: bold;
+  font-size: 24px; 
+}
+.header-nav_links li a:hover {
+  border-bottom: 2px solid #bb6237;
 }
 
 /*----- first section -----*/
 .title-container {
   text-align: center;
+  margin-bottom: 30px;
 }
 .title-container h1 {
   font-family: 'Bradley Hand';
-  font-size: 50px;
+  font-size: 64px;
+  margin-top: 45px;
   margin-bottom: 10px;
 }
 .title-container p {
-  font-size: 20px;
+  font-size: 36px;
   margin-top: 0px;
 }
 .btn {
-  width: 250px;
+  width: 400px;
   height: 50px;
   display: inline-block;
   padding: 0.3em 1em;
   text-decoration: none;
   background-color: #ffffff;
   color: #bb6237;
-  font-size: 20px;
+  font-size: 27px;
   text-align: center;
   line-height: 30px;
   border: solid 2px #bb6237;
@@ -68,11 +76,91 @@ body {
 .btn:hover {
   background-color: #bb6237;
   color: #ffffff;
-  cursor: pointer;
 }
-.top-img {
-  width: 1080px;
-  margin: 40px 20px;
+.top-img img {
+  margin: 40px auto;
 }
 
+/*----- second section -----*/
+.subtitle-container {
+  padding: 15px 0;
+}
+.subtitle-container h2,h3 {
+  font-size: 36px;
+}
+.subtitle-container h3 {
+  font-weight: 600;
+}
+.feature {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-around;
+  margin: 20px 100px 20px 0px;
+  padding: 15px 0;
+}
+.feature-contents {
+  width: 360px;
+  margin-bottom: 50px;
+}
+.left {
+  margin-right: 280px;
+}
+.title-box {
+  width: 360px;
+  height: 50px;
+  padding: 0.5em 1em;
+  margin: 0;
+  background-color: #cc9844;
+  text-align: left;
+  color: #ffffff;
+}
+.feature-contents h4 {
+  font-size: 24px;
+  font-weight: bold;
+  padding-top: 5px;
+  margin: 0px;
+}
+.feature-detail {
+  padding: 15px 0;
+}
+.feature-contents p {
+  font-size: 20px;
+  padding-bottom: 5px;
+  margin: 0px;
+}
 
+/*----- bottom image + downroad btn -----*/
+.downroad-bottom {
+  position: relative;
+}
+.downroad-txt{
+  position: absolute;
+  top: 70px;
+  left: 50px;
+}
+.downroad-txt h2 {
+  font-size: 30px;
+}
+.downroad-bottom {
+  width: 100%;
+}
+
+/*----- third section -----*/
+.about {
+  margin: 150px 0;
+}
+.about h3 {
+  font-size: 36px;
+  margin-bottom: 25px;
+}
+.about p {
+  font-size: 20px;
+  margin: 0;
+}
+
+/*----- footer -----*/
+footer p{
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
