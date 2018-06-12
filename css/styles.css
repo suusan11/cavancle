@@ -42,7 +42,9 @@ body {
 .header-nav_links li a:hover {
   border-bottom: 2px solid #bb6237;
 }
-
+.menu-icon{
+  display: none;
+}
 /*----- first section -----*/
 .title-container {
   text-align: center;
@@ -78,6 +80,7 @@ body {
   color: #ffffff;
 }
 .top-img img {
+  width: 100%;
   margin: 40px auto;
 }
 
@@ -92,21 +95,22 @@ body {
   font-weight: 600;
 }
 .feature {
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   align-content: space-around;
   margin: 20px 100px 20px 0px;
   padding: 15px 0;
 }
-.feature-contents {
-  width: 360px;
+.feature-container {
+  width: 50%;
   margin-bottom: 50px;
 }
-.left {
-  margin-right: 280px;
+.feature-contents {
+  width: 80%;
 }
 .title-box {
-  width: 360px;
+  width: 100%;
   height: 50px;
   padding: 0.5em 1em;
   margin: 0;
@@ -132,16 +136,21 @@ body {
 /*----- bottom image + downroad btn -----*/
 .downroad-bottom {
   position: relative;
+  width: 100%;
 }
 .downroad-txt{
   position: absolute;
   top: 70px;
   left: 50px;
+  width: 100%
 }
 .downroad-txt h2 {
   font-size: 30px;
 }
-.downroad-bottom {
+.downroad-txt h2, a{
+  width: 50%;
+}
+.downroad-bottom img{
   width: 100%;
 }
 
@@ -164,3 +173,5 @@ footer p{
   font-size: 20px;
   margin-bottom: 30px;
 }
+
+
