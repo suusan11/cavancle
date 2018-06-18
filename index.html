@@ -7,10 +7,16 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" type="text/css" href="slick/slick.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" media="screen" />
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+          crossorigin="anonymous"></script>
+  <script src="slick/slick.min.js"></script>
   <link rel="shortcut icon" href="img/icon/favicon16.ico"> 
   <link rel="shortcut icon" href="img/icon/favicon32.ico"> 
   <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
   <title>Cavancle website</title>
+  
 </head>
 <body>
     <header id="header">
@@ -28,6 +34,8 @@
         </nav>
       </div>
     </header>
+
+    <!----- first section ----->
     <div class="container">
       <section>
         <div class="title-container">
@@ -35,11 +43,29 @@
           <p>日常のオアシスがすぐ見つかる</p>
           <a href="#" class="btn">Get started</a>
           </div>
-          <div class="top-img">
-            <img src="20180526frog-assets/cafe.jpeg" alt="cafemain">
+
+          <div class="slider">
+            <div><img src="20180526frog-assets/cafe.jpeg" alt="cafemain"></div>
+            <div><img src="20180526frog-assets/cafe3.jpeg" alt="cafemain"></div>
+            <div><img src="20180526frog-assets/cafe4.jpeg" alt="cafemain"></div>
+            <div><img src="20180526frog-assets/cafe5.jpeg" alt="cafemain"></div>
           </div>
+          <script type="text/javascript">
+            $(function(){
+              $('.slider').slick({
+                infinity: true,
+                autoplay: true,
+                autoplaySpeed: 5000,
+                dots: true,
+                fade: true,
+                dotsClass: 'slick-dots',
+                });
+             });
+          </script>
       </section>
     </div>
+
+    <!----- second section ----->
     <div class="container">
       <section>
         <div class="subtitle-container">
@@ -94,6 +120,8 @@
         </div>
       </section>
   </div>
+
+  <!----- bottom image + downroad btn ----->
   <div class="container">
       <div class="downroad-bottom">
         <img src="20180526frog-assets/cafe2.jpeg" alt="cafesub">
@@ -103,6 +131,8 @@
         </div>
       </div>
   </div>
+
+  <!----- third section ----->
   <div class="container">
       <section>
         <div class="about">
@@ -112,10 +142,12 @@
         </div>
       </section>
   </div>
+
     <footer>
       <div class="container">
         <p>copyright 2018 Cavancle.com all rights reserved</p>
       </div>
     </footer>
+
 </body>
 </html>
