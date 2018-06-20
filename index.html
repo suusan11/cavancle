@@ -12,6 +12,7 @@
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
           crossorigin="anonymous"></script>
   <script src="slick/slick.min.js"></script>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <link rel="shortcut icon" href="img/icon/favicon16.ico"> 
   <link rel="shortcut icon" href="img/icon/favicon32.ico"> 
   <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
@@ -28,9 +29,21 @@
               <li><a href="#">Price</a></li>
               <li><a href="#">Contact</a></li>
             </ul>
-            <a href="#" class="menu-icon">
+            <!--
+             <a href="#" class="menu-icon">
               <span class="fas fa-bars fa-3x"></span>
+            </a> -->
+            <!-- hamburger for mobile --> 
+            <a class="menu-trigger" href="#">
+              <span></span>
+              <span></span>
+              <span></span>
             </a>
+            <script type="text/javascript">
+              $('.menu-trigger').click(funcion(){
+                $(this).toggleClass('active');
+              });
+            </script>
         </nav>
       </div>
     </header>
