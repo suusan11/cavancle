@@ -55,6 +55,32 @@
 		transform: translateY(-20px) rotate(45deg);
 	}
 
+	.global-menu{
+		display: none;
+		width: 100%;
+		height:100%;
+		text-align: center;
+		position: fixed;
+		top: 0;
+		z-index: 100;
+		background: rgba(0,0,0,0.8);
+		padding: 20px;
+		box-sizing: border-box;
+	}
+	.global-menu ul{
+		padding-left: 0px;
+	}
+	.global-menu ul li{
+		padding-left: 0px;
+		list-style-type: none;
+		margin-top: 50px;
+	}
+	.global-menu ul li a{
+		color: #fff;
+		text-decoration: none;
+		font-size: 150%;
+	}
+
 	/*----- first section -----*/
 	.title-container h1{
 		font-size: 42px;

@@ -45,6 +45,9 @@ body {
 .menu-icon{
   display: none;
 }
+.global-menu {
+  display: none;
+}
 .menu-trigger {
   display: none;
 }
