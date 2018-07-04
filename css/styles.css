@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  list-style: none;
 }
 body {
   font-family: 'Araial','Avenir','Helvetica Neue','Helvetica','小塚ゴシックPr6N','Hiragino Sans','ヒラギノ角ゴシック',YuGothic,'Yu Gothic','メイリオ', Meiryo,'ＭＳ Ｐゴシック','MS PGothic', sans-serif, serif;
@@ -45,12 +46,13 @@ body {
 .menu-icon{
   display: none;
 }
-.global-menu {
-  display: none;
-}
 .menu-trigger {
   display: none;
 }
+.global-menu .nav-li a{
+  display: none;
+}
+
 /*----- first section -----*/
 .title-container {
   text-align: center;

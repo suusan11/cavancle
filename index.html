@@ -36,20 +36,11 @@
             </a>
             <nav class="global-menu">
               <ul>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Price</a></li>
-              <li><a href="#">Contact</a></li>
+              <li class="nav-li"><a href="#">About</a></li>
+              <li class="nav-li"><a href="#">Price</a></li>
+              <li class="nav-li"><a href="#">Contact</a></li>
               </ul>
             </nav>
-            <script type="text/javascript">
-              $(function(){
-                $('.menu-trigger').on('click', function() {
-                  $(this).toggleClass('active');
-                  $(".global-menu").fadeToggle();
-                  return false;
-              });
-                });
-            </script>
       </div>
     </header>
 
@@ -166,8 +157,22 @@
         <p>copyright 2018 Cavancle.com all rights reserved</p>
       </div>
     </footer>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-          crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+              $(function(){
+                $('.menu-trigger').click(function() {
+                  $(this).toggleClass('active');
+                    if($(this).hasClass('active')) {
+                        $('.global-menu').addClass('active');
+                    } else {
+                        $('.global-menu').removeClass('active');
+                    }
+              });
+                });
+            </script>
+
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+          crossorigin="anonymous"></script> -->
     <script src="slick/slick.min.js"></script>
 </body>
 </html>
