@@ -40,8 +40,17 @@ body {
   font-weight: bold;
   font-size: 24px; 
 }
-.header-nav_links li a:hover {
-  border-bottom: 2px solid #bb6237;
+.header-nav_links li a::after {
+  border-bottom: solid 2px #bb6237;
+  bottom: 0;
+  content: "";
+  display: block;
+  transition: all .3s ease;
+  -webkit-transition: all .3s ease;
+  width: 0;
+}
+.header-nav_links li a:hover::after {
+  width: 100%;
 }
 .menu-icon{
   display: none;
